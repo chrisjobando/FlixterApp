@@ -28,7 +28,7 @@ Time spent: **4** hour(s) spent in total
 <img src="Obando_C_Walkthrough.gif" width=250><br>
 
 ### Notes
-I had a very loaded week with interviews and travel, and could not complete any of the "bonus" tasks, but I will definitely try to tackle them this weekend
+I had a very loaded week with interviews and travel, and could not complete all of the "bonus" tasks, but I will definitely try to tackle them this weekend
 
 ### Open-source libraries used
 
