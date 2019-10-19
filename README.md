@@ -25,7 +25,7 @@ Time spent: **4** hour(s) spent in total
 
 ### App Walkthough GIF
 
-<img src="Obando_C_Flixter.gif" width=250><br>
+<img src="Obando_C_Walkthrough.gif" width=250><br>
 
 ### Notes
 I had a very loaded week with interviews and travel, and could not complete any of the "bonus" tasks, but I will definitely try to tackle them this weekend
