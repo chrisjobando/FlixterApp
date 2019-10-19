@@ -1,6 +1,7 @@
 package com.example.flixterapp.adapter;
 
 import android.content.Context;
+import android.content.res.Configuration;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -12,6 +13,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
+import com.bumptech.glide.request.RequestOptions;
 import com.example.flixterapp.R;
 import com.example.flixterapp.models.Movie;
 
@@ -69,7 +71,10 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder>{
         public void bind(Movie movie) {
             tvTitle.setText(movie.getTitle());
             tvOverview.setText(movie.getOverview());
-            Glide.with(context).load(movie.getPosterPath()).into(ivPoster);
+
+            Glide.with(context).load(movie.getPosterPath())
+                    .apply(new RequestOptions().placeholder(R.drawable.placeholder)
+                    .error(R.drawable.imagenotfound)).into(ivPoster);
         }
     }
 }
