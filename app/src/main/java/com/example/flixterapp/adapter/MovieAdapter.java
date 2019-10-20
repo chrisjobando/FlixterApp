@@ -71,10 +71,18 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder>{
         public void bind(Movie movie) {
             tvTitle.setText(movie.getTitle());
             tvOverview.setText(movie.getOverview());
+            String imageURL;
 
-            Glide.with(context).load(movie.getPosterPath())
-                    .apply(new RequestOptions().placeholder(R.drawable.placeholder)
-                    .error(R.drawable.imagenotfound)).into(ivPoster);
+            if (context.getResources().getConfiguration().orientation == Configuration.ORIENTATION_LANDSCAPE) {
+                imageURL = movie.getBackdropPath();
+            } else  {
+                imageURL = movie.getPosterPath();
+            }
+
+            Glide.with(context).load(imageURL)
+                .apply(new RequestOptions().placeholder(R.drawable.placeholder)
+                .error(R.drawable.imagenotfound)).into(ivPoster);
+
         }
     }
 }
