@@ -37,7 +37,7 @@ Time spent: **7** hour(s) spent in total
 <img src="Obando_C_Flixter2.gif" width=250><br>
 
 ## Landscape:
-<img src="Obando_C_Flixter2_LAND.gif" height=150><br>
+<img src="Obando_C_Flixter2_LAND.gif" height=200><br>
 
 ### Notes
 Still working on getting the shared element transitions to work!
