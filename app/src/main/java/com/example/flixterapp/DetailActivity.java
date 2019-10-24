@@ -1,5 +1,6 @@
 package com.example.flixterapp;
 
+import android.content.res.Resources;
 import android.graphics.Color;
 import android.graphics.PorterDuff;
 import android.graphics.drawable.LayerDrawable;
@@ -26,7 +27,6 @@ import org.parceler.Parcels;
 import okhttp3.Headers;
 
 public class DetailActivity extends YouTubeBaseActivity {
-    private final String YOUTUBE_API_KEY =  getString(R.string.youtube_api_key);
     private static final String VIDEO_URL = "https://api.themoviedb.org/3/movie/%d/videos?api_key=a07e22bc18f5cb106bfe4cc1f83ad8ed";
 
 //    ImageView ivBackdrop;
@@ -99,7 +99,7 @@ public class DetailActivity extends YouTubeBaseActivity {
     }
 
     private void initializeYoutube(final String youtubeKey, final double rating) {
-        youTubePlayerView.initialize(YOUTUBE_API_KEY, new YouTubePlayer.OnInitializedListener() {
+        youTubePlayerView.initialize(getString(R.string.youtube_api_key), new YouTubePlayer.OnInitializedListener() {
             @Override
             public void onInitializationSuccess(YouTubePlayer.Provider provider, YouTubePlayer youTubePlayer, boolean b) {
                 Log.d("DetailActivity", "onInitializationSuccess");
