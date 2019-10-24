@@ -19,7 +19,7 @@ import org.parceler.Parcels;
 import okhttp3.Headers;
 
 public class TrailerActivity extends YouTubeBaseActivity {
-    private static final String YOUTUBE_API_KEY = "AIzaSyCFOaai6y0Ya0m0lF3uudXOwf_IPNniNCo";
+    private final String YOUTUBE_API_KEY =  getString(R.string.youtube_api_key);
     private static final String VIDEO_URL = "https://api.themoviedb.org/3/movie/%d/videos?api_key=a07e22bc18f5cb106bfe4cc1f83ad8ed";
 
     YouTubePlayerView youTubePlayerView;

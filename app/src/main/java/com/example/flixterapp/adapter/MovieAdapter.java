@@ -101,7 +101,7 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder>{
                 .transform(new RoundedCornersTransformation(15, 10))
                 .error(R.drawable.imagenotfound)).into(ivPoster);
 
-            if (movie.getRating() > 5.0) {
+            if (movie.getRating() > 7.0) {
                 playButton.setVisibility(View.VISIBLE);
                 playButton.setOnClickListener(new View.OnClickListener() {
                     @Override
