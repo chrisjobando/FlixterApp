@@ -3,4 +3,5 @@
     <string name="title">Sample Title</string>
     <string name="overview">Sample Overview</string>
     <string name="poster">Movie Poster</string>
+    <string name="rating">Rating: %.1f</string>
 </resources>
